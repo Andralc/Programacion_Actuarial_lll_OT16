@@ -1,0 +1,39 @@
+---
+title: "Tarea 1."
+author: "Andrés Céspedes"
+date: "29 de agosto de 2016"
+output: html_document
+---
+
+## Calificaciones.
+
+### Primer Semestre.
+
+  * Conceptos de Cálculo:             8
+  * DHPC:                             9
+  * Lengua Extranjera I:              10
+  * Lengua Extranjera II:             10
+  * Lengua Extranjera III:            9
+  * Lengua Extranjera IV:             7
+  * Programación Actuarial I:         7
+  
+### Segundo Semestre.
+
+  * Microeconomía :                   8
+  * Teoría de Ecuaciones:             7
+  * Teoría del Interés I:             7
+  
+### Tercer Semestre.
+
+  * DHTIC:                            8
+  * Formación Humana y Social:        10
+  * Macroeconomía:                    8
+  * Teoría del Interés II:            6
+
+### Cuarto Semestre: 
+
+  * Contabilidad General:             8
+  * Matemáticas Básicas:              6
+  * Problemas de Matemáticas Básicas: 6
+  * Programación Actuarial II:        7
+  * Sistema Financiero Mexicano:      8
