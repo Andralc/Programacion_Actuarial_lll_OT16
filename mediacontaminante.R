@@ -1,24 +1,7 @@
-setwd("C:\Users\Andres\Documents\GitHub\Programación Actuarial III\Programacion_Actuarial_lll_OT16")
-mediacontaminante <- function(directorio, contaminante, id = 1:332){
-  suma <- numeric()
-  for (i in id){
-    
-    id2 <- formatC(i,width = 3 ,flag = "0")
-    readen <- read.csv(paste(id2, ".csv",sep=""),header = T)
-    
-    if (contaminante == "sulfate"){
-      
-      
-      suma <- c(suma,readen$sulfate)
-    } else if (contaminante == "nitrate"){
-      
-      
-      suma <- c(suma,readen$nitrate)
-    } 
-    
-  }
-  promedio <- mean(suma, na.rm = T)
-  promedio
+setwd("C:\Users\Andres\Documents\GitHub\Programación Actuarial III\Programacion_Actuarial_lll_OT16\Programacion_Actuarial_lll_OT16")
+
+mediacontaminante  <- function(directorio, contaminante, id = 1:332) {
+  data = lapply(id, function(i) read.csv(paste(directorio, "/", formatC(i,width = 3, flag = "0"), ".csv", sep = ""))[[contaminante]])
+  
+  return(mean(unlist(data), na.rm = TRUE))
 }
-mediacontaminante("specdata","sulfate",1:332)
-mediacontaminante("specdata","nitrate",1:332)
